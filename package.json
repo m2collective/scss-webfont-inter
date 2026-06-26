@@ -1,35 +1,41 @@
 {
-  "name": "@bu0nq/webfont.inter",
-  "version": "0.3.0",
-  "description": "Package for integrating WebFont Inter",
-  "main": "inter.css",
+  "name": "@m2collective/scss-webfont-inter",
+  "version": "1.0.0",
+  "description": "Package for integrating WebFont Inter.",
+  "keywords": [
+    "m2collective",
+    "scss",
+    "webfont",
+    "inter",
+    "font",
+    "typeface",
+    "woff",
+    "woff2",
+    "normal"
+  ],
+  "main": "index.scss",
+  "exports": {
+    ".": {
+      "sass": "./index.scss",
+      "default": "./index.scss"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bu0nq/webfont.inter.git"
+    "url": "git+https://github.com/m2collective/scss-webfont-inter.git"
   },
-  "keywords": [
-    "inter",
-    "font",
-    "typeface",
-    "webfont",
-    "woff",
-    "woff2",
-    "css",
-    "less",
-    "scss"
-  ],
   "author": {
     "name": "bu0nq",
     "email": "hello@bu0nq.ru"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bu0nq/webfont.inter/issues"
+    "url": "https://github.com/m2collective/scss-webfont-inter/issues"
   },
-  "homepage": "https://github.com/bu0nq/webfont.inter#readme",
+  "homepage": "https://github.com/m2collective/scss-webfont-inter#readme",
   "publishConfig": {
     "access": "public"
   }

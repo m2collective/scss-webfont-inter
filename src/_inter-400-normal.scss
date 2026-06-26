@@ -1,7 +1,13 @@
-@font-face {
+@use "sass:list";
+@use "variables" as *;
+
+@if(list.index($font-weights, 100)) {
+  @font-face {
     font-family: 'Inter';
     src: url('../fonts/inter-400-normal.woff2') format('woff2'),
     url('../fonts/inter-400-normal.woff') format('woff');
+    font-display: $font-display;
     font-weight: 400;
     font-style: normal;
+  }
 }
