@@ -1,7 +1,7 @@
 @use "sass:list";
 @use "variables" as *;
 
-@if(list.index($font-weights, 100)) {
+@if(list.index($font-weights, 400)) {
   @font-face {
     font-family: 'Inter';
     src: url('../fonts/inter-400-normal.woff2') format('woff2'),
