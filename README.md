@@ -1,9 +1,9 @@
-# WebFont.Inter
+# SCSS WebFont Inter
 
 Package for integrating `Inter` fonts in a web environment.
 
-![npm](https://img.shields.io/npm/v/@bu0nq/webfont.inter?style=for-the-badge)
-![npm](https://img.shields.io/npm/dt/@bu0nq/webfont.inter?style=for-the-badge)
+![npm](https://img.shields.io/npm/v/@m2collective/scss-webfont-inter?style=for-the-badge)
+
 ___
 
 ## Installation
@@ -11,100 +11,30 @@ ___
 This package can be deployed automatically using NPM:
 
 ```
-npm i @bu0nq/webfont.inter
+npm i @m2collective/scss-webfont-inter
 ```
 
-## Usage (CSS)
+## Usage
 
 Font files are located in the `fonts` directory. To import all fonts, you can use:
 
-```css
-body {
-  font-family: 'Inter', sans-serif;
-}
+```scss
+@use "@m2collective/scss-webfont-inter";
 ```
 
-### Importing
+You can also configure which fonts will be used when importing:
 
-```css
-@import "@bu0nq/webfont.inter/inter.css";
-@import "@bu0nq/webfont.inter/inter-normal.css";
+```scss
+@use "@m2collective/scss-webfont-inter" with (
+  $font-display: swap,
+  $font-weights: (100, 200, 300, 400, 500, 600, 700, 800, 900),
+);
 ```
-
-To import specific fonts, you can use:
-
-```css
-@import "@bu0nq/webfont.inter/css/inter-100-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-200-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-300-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-400-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-500-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-600-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-700-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-800-normal.css";
-@import "@bu0nq/webfont.inter/css/inter-900-normal.css";
-```
-
-## Usage (LESS)
-
-Font files are located in the `fonts` directory. To import all fonts, you can use:
-
-```less
-body {
-  font-family: 'Inter', sans-serif;
-}
-```
-
-### Importing
-
-```less
-@import "@bu0nq/webfont.inter/inter";
-@import "@bu0nq/webfont.inter/inter-normal";
-```
-
-To import specific fonts, you can use:
-
-```less
-@import "@bu0nq/webfont.inter/less/inter-100-normal";
-@import "@bu0nq/webfont.inter/less/inter-200-normal";
-@import "@bu0nq/webfont.inter/less/inter-300-normal";
-@import "@bu0nq/webfont.inter/less/inter-400-normal";
-@import "@bu0nq/webfont.inter/less/inter-500-normal";
-@import "@bu0nq/webfont.inter/less/inter-600-normal";
-@import "@bu0nq/webfont.inter/less/inter-700-normal";
-@import "@bu0nq/webfont.inter/less/inter-800-normal";
-@import "@bu0nq/webfont.inter/less/inter-900-normal";
-```
-
-## Usage (SCSS)
-
-Font files are located in the `fonts` directory. To import all fonts, you can use:
 
 ```scss
 body {
   font-family: 'Inter', sans-serif;
 }
-```
-
-### Importing
-
-```scss
-@use "@bu0nq/webfont.inter/inter";
-@use "@bu0nq/webfont.inter/inter-normal";
-```
-
-To import specific fonts, you can use:
-
-```scss
-@use "@bu0nq/webfont.inter/scss/inter-100-normal";
-@use "@bu0nq/webfont.inter/scss/inter-200-normal";
-@use "@bu0nq/webfont.inter/scss/inter-300-normal";
-@use "@bu0nq/webfont.inter/scss/inter-400-normal";
-@use "@bu0nq/webfont.inter/scss/inter-500-normal";
-@use "@bu0nq/webfont.inter/scss/inter-600-normal";
-@use "@bu0nq/webfont.inter/scss/inter-700-normal";
-@use "@bu0nq/webfont.inter/scss/inter-800-normal";
-@use "@bu0nq/webfont.inter/scss/inter-900-normal";
 ```
 
 ## Licensing
